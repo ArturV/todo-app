@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a single to do app using html, js, css without 3rd party libraries."
+    />
+    <title>To do App - Html, css, js only</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="./style/style.css" />
+
+  </head>
+  <body>
+    <div class="App">
+      <header>
+        <h1>To do <span id="appHeader">App</span></h1>
+      </header>
+      <section id="formSection">
+        <div class="todoForm">
+          <form onsubmit="handleFormSubmit(event)">
+            <fieldset>
+              <label for="todo">Todo task:</label>
+              <input
+                type="text"
+                name="todoInput"
+                id="todoInput"
+                placeholder="Enter your todo"
+                maxlength="160"
+                minlength="3"
+                required
+              />
+              <label for="date">Date:</label>
+              <input type="datetime-local" name="dateInput" id="dateInput" />
+              <button type="submit" id="addTodoButton">Add</button>
+            </fieldset>
+          </form>
+          
+        </div>
+      </section>
+      <section id="todoSection">
+        <ul class="todoList">
+        </div>
+      </section>
+
+      <footer><span id="today">2023</span></footer>
+    </div>
+  </body>
+  <script src="./js/app.js"></script>
+</html>
